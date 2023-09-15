@@ -1,0 +1,159 @@
+site_name: RS Booking
+
+site_name: Booking
+
+repo_name: "2023.1 Booking"
+repo_url: "https://github.com/Requisitos-de-Software/2023.1-Booking"
+
+copyright: "Copyright &copy; 2023 rs"
+
+theme:
+  name: material
+  logo: images/bookingIcon.png
+  favicon: images/bookingIcon.png
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Trocar para o modo escuro
+
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Trocar para o modo claro
+
+plugins:
+  - search
+  - charts
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: vegalite
+          class: vegalite
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+    
+nav:
+  - Home: index.md
+  - Atas: 
+      - 01/04/2023: atas/ata_01_04.md
+      - 07/04/2023: atas/ata_07_04.md
+      - 21/04/2023: atas/ata_21_04.md
+      - 28/04/2023: atas/ata_28_04.md
+      - 05/05/2023: atas/ata_05_05.md
+      - 20/05/2023: atas/ata_20_05.md
+  - Apresentações: 
+      - Primeira Apresentação: apresentacoes/primeiraApresentacao.md
+      - Segunda Apresentação: apresentacoes/segundaApresentacao.md
+      - Terceira Apresentação: apresentacoes/terceiraApresentacao.md
+      - Quarta Apresentação: apresentacoes/quartaApresentacao.md
+      - Quinta Apresentação: apresentacoes/quintaApresentacao.md
+      - Sexta Apresentação: apresentacoes/sextaApresentacao.md
+      - Sétima Apresentação: apresentacoes/setimaApresentacao.md
+      - Oitava Apresentação: apresentacoes/oitavaApresentacao.md
+
+  - Pré-Planejamento:
+      - Rich Picture: prePlanejamento/richPicture.md
+  - Planejamento:
+      - Aplicativo selecionado: planejamento/aplicativoSelecionado.md
+      - Aplicativos analisados: planejamento/aplicativosAnalisados.md
+      - Ferramentas: planejamento/ferramentas.md
+      - Disponibilidade dos membros: planejamento/disponibilidade.md
+      - Metodologia: planejamento/metodologia.md
+      - Cronogramas:
+        - Cronograma planejado: planejamento/cronograma.md
+        - Cronograma realizado: planejamento/cronogramaRealizado.md
+  - Elicitação:
+      - Perfil de usuário: elicitacao/perfilDeUsuario.md
+      - Personas: elicitacao/personas.md
+      - Brainstorm: elicitacao/brainstorm.md
+      - Observação: elicitacao/observacao.md
+      - Storytelling: elicitacao/storytelling.md
+  - Priorização:
+      - Three Level-Scale: elicitacao/threeLevelScale.md
+      - Moscow: elicitacao/moscow.md
+      - In or Out: elicitacao/inOrOut.md
+  - Modelagem:
+      - Cenários: modelagem/cenarios.md
+      - Léxicos: modelagem/lexicos.md
+      - Casos de uso: modelagem/casosDeUso.md
+      - Especificação Suplementar: modelagem/especificacaoSuplementar.md
+      - Modelagem Ágil:
+        - Backlog: modelagem/modelo-agil/backlog.md
+        - Histórias de Usuário: modelagem/modelo-agil/historiasDeUsuario.md
+        - NFR Framework: modelagem/modelo-agil/nfrFramework.md
+  - Análise de requisitos:
+      - Validação: verificacaoGrupo/validacao.md
+      - Verificação:
+        - Metodologia: verificacaoGrupo/metodologia.md
+        - Planejamento:
+          - Cronograma: verificacaoGrupo/planejamento/cronograma.md
+          - Aplicativos analisados: verificacaoGrupo/planejamento/listaDeAplicativos.md
+          - Aplicativos selecionado: verificacaoGrupo/planejamento/aplicativoSelecionado.md
+          - Ferramentas: verificacaoGrupo/planejamento/ferramenta.md
+        - Pré-rastreabilidade:
+          - Rich Picture: verificacaoGrupo/prePlanejamento/richPicture.md 
+        - Elicitação:
+          - Perfil de usuário: verificacaoGrupo/elicitacao/perfilUsuario.md
+          - Personas: verificacaoGrupo/elicitacao/personas.md
+          - Brainstorm: verificacaoGrupo/elicitacao/brainstorm.md
+          - Storytelling: verificacaoGrupo/elicitacao/storytelling.md
+          - Observação: verificacaoGrupo/elicitacao/observacao.md
+        - Priorização:
+          - In or Out: verificacaoGrupo/priorizacao/inOrOut.md
+          - Three Level-Scale: verificacaoGrupo/priorizacao/threeLevelScale.md
+          - MoSCoW: verificacaoGrupo/priorizacao/moscow.md
+        - Modelagem:
+          - Casos de uso: verificacaoGrupo/modelagem/casoUso.md
+          - Especificação Suplementar: verificacaoGrupo/modelagem/especificacaoSuplementar.md
+          - Léxicos: verificacaoGrupo/modelagem/lexicos.md
+          - Cenários: verificacaoGrupo/modelagem/cenarios.md
+        - Agil:
+          - Backlog: verificacaoGrupo/agil/backlog.md
+          - Histórias de Usuário: verificacaoGrupo/agil/historiasDeUsuario.md
+          - NFR Framework: verificacaoGrupo/modelagem/nfrFrameWork.md
+      - Verificação grupo 3:
+        - Metodologia: verificacao3/metodologia.md
+        - Planejamento:
+          - Cronograma: verificacao3/planejamento/cronograma.md
+          - Lista de Aplicativos: verificacao3/planejamento/listaDeAplicativos.md
+          - Ferramentas: verificacao3/planejamento/ferramenta.md
+        - Pré-rastreabilidade:
+          - Rich Picture: verificacao3/prePlanejamento/richPicture.md 
+        - Elicitação:
+          - Perfil de usuário: verificacao3/elicitacao/perfilUsuario.md
+          - Personas: verificacao3/elicitacao/personas.md
+          - Storytelling: verificacao3/elicitacao/storytelling.md
+        - Priorização:
+          - In or Out: verificacao3/priorizacao/inOrOut.md
+          - First Things First: verificacao3/priorizacao/firstThingsFirst.md
+          - MoSCoW: verificacao3/priorizacao/moscow.md
+        - Modelagem:
+          - Casos de uso: verificacao3/modelagem/casoUso.md
+          - Especificação Suplementar: verificacao3/modelagem/especificacaoSuplementar.md
+          - Léxicos: verificacao3/modelagem/lexicos.md
+          - Cenários: verificacao3/modelagem/cenarios.md
+        - Agil:
+          - Backlog: verificacao3/agil/backlog.md
+          - Histórias de Usuário: verificacao3/agil/historiasDeUsuario.md
+          - NFR Framework: verificacao3/agil/nfrFramework.md
+  - Pós-rastreabilidade:
+    - Backward-from: rastreabilidade/backward.md
+    - Forward From: rastreabilidade/forwardFrom.md
+    - Matriz geral: rastreabilidade/matrizRastreabilidade.md
+  - Entrega Final: entregaFinal/entregaFinal.md
+
+
+        
+
